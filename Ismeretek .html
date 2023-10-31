@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .scroll-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="scroll-button" onclick="scrollToBottom()">Ugrás az oldal aljára</button>
+<H1><div class="Ismeretek"></div></H1>
+    <P><h2>
+        A programozói bérek szokás szerint nyelvek szerinti felosztásban jelennek meg a Hays Salary Guide-ban (C/C++, Java, .NET, PHP, Python és külön az adatbázis fejlesztés), de egyébként a juniorok egységesen bruttó 650 ezer forintos fizetésről indulhatnak minden felsorolt nyelvtípussal, ami 100-150 ezer forinttal több, mint a tavalyi jelentésben írt összeg, tehát körülbelül 18-30 százalékos emelkedés látható.
+    </h2></P>
+    
+    <p>
+    <h3>
+        Junior szinten a bérek maximuma bruttó egymillió forintnál áll meg, a tavalyi 850-900 ezerhez képest. A bruttó millió feletti fizetések már a medior szint (3-5 év) átlagfizetéseit jellemzik, itt a maximum fizetés elérheti az 1,5 milliót, ha Java, Python, C#, vagy mobilfejlesztőről van szó.
+    </h3>
+    </p>
+    
+    <p>
+    <h4>
+        A Hays szerint a fejlesztői bérek közé sorolt kategóriában a junior manuális tesztelők fizetése a legalacsonyabb, minimum bruttó havi 600 kezdőbérrel, akik tavaly havi 450 ezres bérrel számolhattak. Senior szinten a legjobb bértárgyalók akár az 1,4 millió forintos bér is kialkudhatják, de már mindenképp egymillió forint felett kezdődik a fizetésük. Az automatikus tesztekkel foglalkozók bére a többi fejlesztői pozícióhoz hasonló mértékben emelkedik a tapasztalattal.
+    </h4>
+    </p>
+    
+    <p>
+    <h4>
+        Az infrastruktúrával és felhőtechnológiával foglalkozó juniorok havi bére jellemzően bruttó 650-850 ezer forint körül alakul. A Hays ide sorolja a rendszeradminisztrátorokat, rendszermérnököket, hálózatmérnököket, DevOps és Cloud mérnököket. A felsoroltak közül utóbbi két munkakör szerepelhet legjobban a bértárgyalásokon, már mediorként akár bruttó havi 1,4-1,6 millió forintot is kaphatnak, senior és vezető pozícióban pedig elérhetik a 2,2-2,8 millió forint körüli fizetést. A terület többi pozíciójában az 5 éves munkatapasztalat megszerzése után átlagosan 1,2-1,7 millió forint körüli havi bérre lehet számítani.
+    </h4>
+    </p>
+    <p>
+    <h2>
+        Egy következő terület a kiberbiztonság, ahol a SOC elemzők és a penetrációs tesztekkel foglalkozó juniorok másokhoz hasonlóan bruttó havi 600 ezer forintos bérrel indulhatnak. A biztonsági mérnököknél és a kiberbiztonsági tanácsadóknál viszont már a junior bér is 700 ezer forintról indul. Csapatvezetői szinten a SOC elemzők és a penetrációs tesztelők 1,8 milliós bérig juthatnak, a biztonsági mérnökök és a kiberbiztonsági tanácsadók pedig 2,5 millió forintig, ami tavaly még maximum 1,8 millió forint volt, ami 38 százalékos növekedést jelent, ez pedig jól mutatja az ilyen szakemberek iránti megnövekedett érdeklődést.
+    
+    </h2>
+    </p>
+    <div style="height: 1500px;"> 
+        Házi feladat talán kész :)
+    </div>
+    <footer> <p> © by Buydosov </p> </footer>
+    <script>
+        function scrollToBottom() {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        window.onscroll = function() {
+            var button = document.querySelector('.scroll-button');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        };
+    </script>
+    
+</body>
+</html>
