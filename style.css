@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    margin: 100px;
+    display: inline-flex;
+}
+
+.card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #9b5555;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0%;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+}
+
+.card::before {
+    content: "";
+    width: 80%;
+    height: 50%;
+    display: block;
+    background: rgba(255, 255, 255, 0.687);
+    backdrop-filter: blur(1px);
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgb(255, 255, 255, / 50%);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+    position: relative;
+    left: 50%;
+    transition: 0.4s ease-out;
+}
+
+.nature .car:nth-last-of-type(1) {
+    background: url('');
+    background-size: cover;
+    background-position: center;
+}
+
+.nature .car:nth-last-of-type(2) {
+    background: url(''); 
+    background-size: cover;
+    background-position: center;
+}
+
+.nature .car:nth-last-of-type(3) {
+    background:; 
+    background-size: cover;
+    background-position: center;
+}
+.nature .car:nth-last-of-type(4) {
+    background: url(''); 
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animate {
+    0% {
+        opacity: 31;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    } 
+    100% {
+        opacity: 43;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+}
+
+}
